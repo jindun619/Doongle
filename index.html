@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/6a9889b649.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Doongle - not Google, Doongle</title>
+  </head>
+  <body>
+    <div class="whole_container">
+      <header class="header">
+        <div class="header__logo">
+          <img src="img/logo.png" alt="Doongle" />
+          <a src="#"></a>
+        </div>
+      </header>
+      <section class="search">
+        <div class="search_container">
+          <div class="search__google" id="js-search__google">
+            <div class="google__insider">
+              <div class="google__icon">
+                <div class="google__icon-insider">
+                  <span
+                    class="google__icon-insider2"
+                    id="js-google__icon-insider2"
+                  >
+                    <i class="btn fas fa-search"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="google__search">
+                <input
+                  type="text"
+                  class="google__input"
+                  id="js-google__input"
+                  placeholder="Search On Google"
+                  autocomplete="off"
+                  autofocus
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="search_container">
+          <div class="search__naver">
+            <form
+              action="https://search.naver.com/search.naver"
+              class="naver__form"
+              method="GET"
+            >
+              <fieldset>
+                <span class="naver__search">
+                  <input
+                    type="text"
+                    class="naver__input"
+                    id="js-naver__input"
+                    placeholder="네이버에 검색하기"
+                    name="query"
+                    autocomplete="off"
+                  />
+                  <button
+                    class="naver__button"
+                    id="js-naver__button"
+                    tabindex="-1"
+                  >
+                    N
+                  </button>
+                </span>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+        <div class="search_container">
+          <div class="search__baidu">
+            <form
+              action="https://www.baidu.com/s"
+              class="baidu__form"
+              id="js-baidu__form"
+              method="GET"
+            >
+              <input
+                type="text"
+                class="baidu__input"
+                id="js-baidu__input"
+                placeholder="百度一下，你就知道"
+                name="wd"
+                autocomplete="off"
+              />
+              <span class="baidu__button">
+                <input
+                  type="submit"
+                  class="baidu__submit"
+                  id="js-baidu__submit"
+                  value="百度一下"
+                />
+              </span>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="bookmark">
+        <div class="bookmark__row">
+          <div class="bookmark__item"></div>
+          <div class="bookmark__item"></div>
+          <div class="bookmark__item"></div>
+          <div class="bookmark__item"></div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="selector.js"></script>
+  <script src="styler.js"></script>
+  <script src="searcher.js"></script>
+</html>
+
+<!--
+Google: https://www.google.com/search?q=url
+Naver: https://search.naver.com/search.naver?query=url
+Baidu: https://www.baidu.com/s?wd=url
+-->
